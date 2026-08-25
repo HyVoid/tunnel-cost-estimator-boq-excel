@@ -12,7 +12,8 @@
 
 Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
 
-> [🌐 Open in Browser](#access) → Browser version
+> [🌐 Open in Browser](https://hyvoid.github.io/Tunnel-Drill-and-Blast-Cost-Estimation-BOQ-Engine/) → Browser version
+> 
 > [📥 Download Excel](#access) → Excel version
 >
 > The workbook is designed as a lightweight execution and decision-support tool for contractors moving from manpower supply toward end-to-end drill-and-blast tunnelling operations.
