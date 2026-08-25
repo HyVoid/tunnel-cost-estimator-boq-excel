@@ -1,0 +1,6 @@
+{
+  "name": "Tunnel Drill-and-Blast Cost Estimation & BOQ Engine",
+  "description": "Professional SaaS tool for end-to-end drill & blast tunnel quantity takeoff, material BOQ generation, and dynamic cost estimation with real-time formula computation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
