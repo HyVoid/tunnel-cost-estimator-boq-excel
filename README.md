@@ -16,7 +16,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 > 
 > [📥 Download Excel](#access) → Excel version
 >
-> The workbook is designed as a lightweight execution and decision-support tool for contractors moving from manpower supply toward end-to-end drill-and-blast tunnelling operations.
+> This tool is designed as a rigorous cost estimation and Bill of Quantities (BOQ) computational engine; however, it does not replace the professional engineering judgment, site-specific geotechnical investigations, and certified design authorizations of Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in establishing blast patterns, explosive loading regimes, perimeter presplit spacing, rock mass classifications (e.g., Q-system, RMR, GSI), or structural ground support classes.
 
 ## What It Helps You Track
 
