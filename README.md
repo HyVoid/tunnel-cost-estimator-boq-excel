@@ -98,6 +98,7 @@ This tunnel estimating engine applies that approach to a specific problem: conne
 
 It is designed as a reusable analytical framework rather than a one-off project estimate.
 
+
 ## Technical Details
 
 <details>
@@ -231,8 +232,6 @@ Project Cost / Target Commercial Result
 ```
 
 The purpose is not to make the estimate look more sophisticated. It is to make the source of the final number inspectable.
-
-</details>
 
 <!-- README Part 2 of 3 -->
 
@@ -505,7 +504,6 @@ Project-Level Commercial Result
 
 The important implementation principle is **single-point maintenance**. Changing an overhead or contingency assumption should update the summary without editing individual cost formulas.
 
-</details>
 
 ### Validation Rules
 
@@ -624,11 +622,7 @@ Accordingly:
 
 The workbook's value is in **connecting assumptions consistently**, not in deciding whether those assumptions are technically appropriate for a particular tunnel.
 
-<!-- README Part 3 of 3 -->
 
-<!-- Final continuation of the same README document. -->
-
-<!-- The Technical Details parent <details> opened in Part 1 is closed exactly once below. -->
 
 ### Reproducibility Checklist
 
@@ -785,6 +779,7 @@ Commercial assumptions convert direct cost into a project-level commercial view.
 That makes the workbook useful not only for producing a number, but for understanding **why the number is what it is**.
 
 </details>
+
 
 ## Other Tools in This Series
 
