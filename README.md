@@ -779,6 +779,7 @@ Commercial assumptions convert direct cost into a project-level commercial view.
 That makes the workbook useful not only for producing a number, but for understanding **why the number is what it is**.
 
 </details>
+</details>
 
 
 ## Other Tools in This Series
