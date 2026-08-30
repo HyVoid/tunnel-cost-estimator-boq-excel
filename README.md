@@ -12,7 +12,7 @@ Try the browser version for quick feasibility testing. If you need the fully unl
 
 > [🌐 Launch the Free Web-Based Drill-and-Blast Calculator](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/) → Best for quick project feasibility testing
 > 
-> [📥 Download the Reusable Excel Tunnel Estimating Template](https://alexhasgreatestuff.gumroad.com/l/aquodj?wanted=true) → Best for enterprise ERP integration and offline bidding
+> [📥 Download the Reusable Excel Tunnel Estimating Template](https://alexhasgreatestuff.gumroad.com/l/aquodj) → Best for enterprise ERP integration and offline bidding
 >
 > *Disclaimer: This software serves as a rigorous cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace the professional engineering judgment, site-specific geotechnical investigations, and certified design authorizations of Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in establishing blast patterns, explosive loading regimes, perimeter presplit spacing, rock mass classifications (e.g., Q-system, RMR, GSI), or structural ground support classes.*
 
@@ -40,7 +40,7 @@ Instead of isolated spreadsheets, this system maps your commercial and engineeri
 4. **Step 4: Review the BOQ and Cost Summary (Decision Output).**
    Export the material BOQ to review category-level quantities and costs. Analyze the separated direct costs, operating margins, and unit-cost indicators for final decision-making.
 
-💡 **Ready to standardize your workflow?** After testing your project parameters in the free browser version, **[download the reusable Excel tunnel estimating template](https://alexhasgreatestuff.gumroad.com/l/aquodj?wanted=true)** to save your customized commercial rates and use it repeatedly for future underground construction tender submissions.
+💡 **Ready to standardize your workflow?** After testing your project parameters in the free browser version, **[download the reusable Excel tunnel estimating template](https://alexhasgreatestuff.gumroad.com/l/aquodj)** to save your customized commercial rates and use it repeatedly for future underground construction tender submissions.
 
 ## Real-World Scenarios: Who Uses This Drill and Blast Estimator?
 
