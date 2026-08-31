@@ -8,7 +8,7 @@
 
 **No signup. No installation. Free in your browser.**
 
-Try the browser version for quick feasibility testing. If you need the fully unlocked enterprise Excel version for repeated bidding, you can acquire it with a 7-day money-back guarantee.
+Try the browser version for quick feasibility testing. If you need the fully unlocked enterprise Excel version for repeated bidding, you can acquire it with a 30-day, no-questions-asked money-back guarantee.
 
 > [🌐 Launch the Free Web-Based Drill-and-Blast Calculator](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/) → Best for quick project feasibility testing
 > 
