@@ -1,3 +1,5 @@
+[ 🌐 عربي ](README.ar.md) | [ 🇬🇧 English ](README.md)
+
 # Tunnel Drill-and-Blast Cost Estimation Software & BOQ Calculator Engine
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
