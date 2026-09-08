@@ -1,4 +1,4 @@
-[ 🌐 عربي ](README.ar.md) | [ 🇬🇧 English ](README.md)
+[ 🌐 عربي ](README.ar.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
 # Tunnel Drill-and-Blast Cost Estimation Software & BOQ Calculator Engine
 
