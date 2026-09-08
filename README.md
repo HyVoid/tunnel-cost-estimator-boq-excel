@@ -17,6 +17,7 @@ Try the browser version for quick feasibility testing. If you need the fully unl
 > [📥 Download the Reusable Excel Tunnel Estimating Template](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq) → Best for enterprise ERP integration and offline bidding
 >
 > *Disclaimer: This software serves as a rigorous cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace the professional engineering judgment, site-specific geotechnical investigations, and certified design authorizations of Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in establishing blast patterns, explosive loading regimes, perimeter presplit spacing, rock mass classifications (e.g., Q-system, RMR, GSI), or structural ground support classes.*
+
 ## Want to try it?
 
 This project is included in the Construction Toolkit.
