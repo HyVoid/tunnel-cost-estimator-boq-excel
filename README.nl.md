@@ -18,14 +18,6 @@ Probeer de browserversie voor snelle haalbaarheidstests. Als u de volledig ontgr
 >
 > *Disclaimer: This software serves as a rigorous cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace the professional engineering judgment, site-specific geotechnical investigations, and certified design authorizations of Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in establishing blast patterns, explosive loading regimes, perimeter presplit spacing, rock mass classifications (e.g., Q-system, RMR, GSI), or structural ground support classes.*
 
-## Want to try it?
-
-Dit project maakt deel uit van de Construction Toolkit.
-
-Probeer deze en andere lichtgewicht bouwtools 30 dagen gratis — inclusief tools voor calculeren, inschrijven, jobkostenberekening en dagelijkse operaties.
-
-→ [Try the Construction Toolkit](https://theseusworkshop.com/l/fqtoi/BIDSEASON?utm_source=github&utm_medium=GitHub%20portfolio)
-
 In plaats van geïsoleerde spreadsheets koppelt dit systeem uw commerciële en technische knelpunten direct aan geautomatiseerde oplossingen:
 
 * **Pain Point: Guessing blast cycles.** → **Solution:** Geautomatiseerde registratie van het totale graafvolume en het exacte aantal springcycli dat volgt uit uw tunnellengte en schotlengte.
