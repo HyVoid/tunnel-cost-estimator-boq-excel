@@ -18,14 +18,6 @@ Prueba la versión de navegador para validar rápidamente la factibilidad del pr
 >
 > *Aviso: este software funciona como un motor de cálculo riguroso de estimación de costos y de listado de cantidades (BOQ). No reemplaza el criterio profesional de ingeniería, las investigaciones geotécnicas específicas del sitio ni las autorizaciones de diseño certificadas de Ingenieros de Túneles, Ingenieros de Voladura o Especialistas Geotécnicos para establecer patrones de voladura, regímenes de carga de explosivos, espaciado de precorte del perímetro, clasificaciones del macizo rocoso (p. ej., Q-system, RMR, GSI) o clases de soporte estructural del terreno.*
 
-## ¿Quieres probarlo?
-
-Este proyecto está incluido en el Construction Toolkit.
-
-Prueba esta y otras herramientas ligeras de construcción gratis durante 30 días — incluyendo herramientas para estimación, licitaciones, costos de obra y operaciones diarias.
-
-→ [Prueba el Construction Toolkit](https://theseusworkshop.com/l/fqtoi/BIDSEASON?utm_source=github&utm_medium=GitHub%20portfolio)
-
 En lugar de hojas de cálculo aisladas, este sistema vincula tus puntos de dolor comerciales y de ingeniería directamente con soluciones automatizadas:
 
 * **Punto de dolor: adivinar los ciclos de voladura.** → **Solución:** seguimiento automatizado del volumen total de excavación y del número exacto de ciclos de voladura que se derivan de la longitud del túnel y de la longitud de avance.
