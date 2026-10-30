@@ -327,4 +327,33 @@ Before submitting a commercial tender or finalizing a feasibility budget, comple
 
 1. **Project Geometry:** Confirm `Tunnel_Length`, `Section_Area`, `Perimeter`, and `Overbreak_Rate`.
 2. **Blast Design Assumptions:** Confirm `Pull_Length`, `Holes_Per_Round`, `Hole_Depth`, `Explosive_Factor` basis, `Detonator_Per_Round`, and drill consumable wear rates.
-3. **Ground Support Design:** Confirm `Shotcrete_Thickness`, `Rock_Bolt_Spacing` & length, and `Steel_Arch_
+3. **Ground Support Design:** Confirm `Shotcrete_Thickness`, `Rock_Bolt_Spacing` & length, and `Steel_Arch_Spacing` & unit weight.
+4. **Equipment & Crew Rates:** Confirm hourly rates, crew headcount configurations, and whether equipment rates reflect dry rental, wet hire, or internal ownership depreciation.
+5. **Commercial & Procurement Inputs:** Verify supplier material quotes, `Overhead_Rate`, `Contingency_Rate`, `Profit_Margin_Rate`, and project currency.
+6. **Output Sanity Check:** Cross-check total excavation volume (`m³`), blast cycle count, total drilling metres, BOQ line totals, direct vs. total project cost, and normalized `$/m` and `$/m³` benchmarks against historical project data.
+
+</details>
+
+---
+
+## About Theseus Workshop & Related Construction Excel Toolkits
+
+**Theseus Workshop** builds lightweight, institutional-grade Excel decision-support engines for complex engineering, construction, and operational workflows where ad-hoc spreadsheets fail.
+
+Explore related commercial and operational Excel models in this series:
+
+* **Single-Project Construction Cost Control & Cash Flow Workbook** — Track baseline project budgets, actual job costs, approved change orders, progress billing (AIA style), retainage collections, and monthly contractor cash flow.
+* **Contractor Operations, Estimating & Job Profitability System** — End-to-end operational pipeline covering `Lead → Estimate → Active Job → Labour & Material Tracking → Job Costing → Net Margin`.
+* **Warehouse 3PL Storage & Recurring Billing Control System** — Translate daily pallet/inventory operational logs into automated recurring client invoicing and reconciliation.
+* **Freight Forwarding & Logistics Booking-Level Profitability Engine** — Track shipment revenue, carrier COGS, customs/port fees, and net margin at the individual booking level.
+
+Browse all engineering and financial templates at **[The Official Theseus Workshop Template Store](https://www.theseusworkshop.com/)**, or start estimating your tunnel project now:
+
+* 🌐 **[Launch the Free Web-Based Tunnel Drill-and-Blast BOQ Calculator Online](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/)**
+* 📥 **[Download the Complete Reusable Excel Tunnel Cost Estimating Template (`.xlsx`)](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq)**
+
+---
+
+## License
+
+This project is released under the **Apache License 2.0**. You may use, reproduce, modify, and distribute the open-source repository components subject to the terms and conditions of the Apache License 2.0. See the [`LICENSE`](LICENSE) file for the complete legal text.
