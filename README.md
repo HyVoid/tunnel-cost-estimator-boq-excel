@@ -1,803 +1,329 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Tunnel Drill-and-Blast Cost Estimation Software & BOQ Calculator Engine
+# Tunnel Drill-and-Blast Cost Estimation Software, Excel Template & BOQ Calculator Engine
+
+
+## Underground Hard Rock Excavation, NATM Tunnelling & Mining Development Cost Model (Microsoft Excel `.xlsx` + Free Web App)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346.svg)](#access)
-[![Tool Type](https://img.shields.io/badge/Tool%20Type-Decision%20Support-2251FF.svg)](#what-it-helps-track)
+[![Platform](https://img.shields.io/badge/Platform-Web%20Browser%20%7C%20Microsoft%20Excel-217346.svg)](#quick-start-tutorial-how-to-build-your-tunnel-cost-model)
+[![Tool Type](https://img.shields.io/badge/Category-Underground%20Construction%20Estimating%20Software-2251FF.svg)](#what-it-helps-you-track-tunnel-estimating-pain-points--boq-solutions)
+[![Excel](https://img.shields.io/badge/Compatibility-Excel%20365%20%7C%20Dynamic%20Arrays-success)](#technical-architecture--excel-formula-reference)
+[![No VBA](https://img.shields.io/badge/Macros-100%25%20No--VBA%20Native%20Formulas-lightgrey)](#technical-architecture--excel-formula-reference)
 
-<p><strong>Looking for a reliable underground construction cost estimation software?</strong> This free, browser-based <strong>Bill of Quantities (BOQ) calculator engine</strong> helps tunnel engineers, contractors, and estimators calculate excavation quantities, drilling and blasting resources, ground support materials, heavy equipment operating hours, and underground labour costs from a single set of engineering assumptions—without rebuilding the <strong>tunneling cost model</strong> from scratch for every tender.</p>
+**This Tunnel Drill-and-Blast Cost Estimation Software and Bill of Quantities (BOQ) Calculator Engine is an all-in-one underground construction estimating Excel template and free web application. Engineered for civil infrastructure contractors, hard rock mining estimators, and quantity surveyors (QS), this tunneling cost model automatically calculates neat and overbreak excavation volumes, advance blast cycles, jumbo drilling metres, commercial explosives (ANFO / Emulsion) and detonator consumption, NATM ground support materials (shotcrete, rock bolts, steel ribs/arches), heavy equipment operating hours, and underground crew labour costs from a single set of geotechnical and geometric inputs— outputting unit-rate tender metrics (`$/m` and `$/m³`) without rebuilding spreadsheets from scratch.**
 
-**No signup. No installation. Free in your browser.**
+**No signup. No macro installation. Instant browser-based BOQ calculation + downloadable Microsoft Excel `.xlsx` workbook.**
 
-Try the browser version for quick feasibility testing. If you need the fully unlocked enterprise Excel version for repeated bidding, you can acquire it with a 30-day, no-questions-asked money-back guarantee.
+Run rapid tunnel feasibility checks and quantity takeoffs (QTO) directly in our free web calculator, or upgrade to the fully unlocked enterprise Microsoft Excel `.xlsx` estimating template for repeatable tender bidding, supplier rate database management, and offline ERP integration—backed by a 30-day, no-questions-asked money-back guarantee.
 
-> [🌐 Launch the Free Web-Based Drill-and-Blast Calculator](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/) → Best for quick project feasibility testing
+> 🌐 **Interactive Online BOQ & Excavation Calculator (Free)**
+> [Launch the Free Web-Based Tunnel Drill-and-Blast Cost & BOQ Calculator in Your Browser](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/) → *Best for instant feasibility testing and quick quantity takeoffs*
 > 
-> [📥 Download the Reusable Excel Tunnel Estimating Template](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq) → Best for enterprise ERP integration and offline bidding
+> 📥 **Full Enterprise Estimating Workbook (`.xlsx` Download)**
+> [Download the Reusable Microsoft Excel Tunnel Cost Estimating & BOQ Template](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq) → *Best for multi-project tender bidding, custom rate libraries, and offline engineering audits*
 >
-> *Disclaimer: This software serves as a rigorous cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace the professional engineering judgment, site-specific geotechnical investigations, and certified design authorizations of Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in establishing blast patterns, explosive loading regimes, perimeter presplit spacing, rock mass classifications (e.g., Q-system, RMR, GSI), or structural ground support classes.*
+> *Engineering Disclaimer: This software functions strictly as a commercial cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace site-specific geotechnical investigations or certified design authorizations by licensed Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in determining blast patterns, powder factors, perimeter presplit spacing, rock mass classifications (Q-system, RMR, GSI), or structural ground support classes.*
 
-Instead of isolated spreadsheets, this system maps your commercial and engineering pain points directly to automated solutions:
+---
 
-* **Pain Point: Guessing blast cycles.** → **Solution:** Automated tracking of total excavation volume and the precise number of blast cycles implied by your tunnel length and pull length.
-* **Pain Point: Unpredictable material usage.** → **Solution:** Calculate exact drilling metres, explosive (ANFO/Emulsion) yields, detonators, shotcrete thickness, rock bolts, and steel arch requirements based on rock mass geometry.
-* **Pain Point: Incomplete resource allocation.** → **Solution:** Generate heavy equipment operating hours and underground labour hours directly from the planned construction cycle.
-* **Pain Point: Hidden overheads.** → **Solution:** Separate direct cost, project operating cost, contingency, overhead, and target margin into distinct commercial layers for transparent bidding.
-* **Pain Point: Weak unit economics.** → **Solution:** Instantly generate unit-cost indicators such as total cost per metre ($/m) and excavation cost per cubic metre ($/m³) for hard rock tunneling.
+## What It Helps You Track: Tunnel Estimating Pain Points & BOQ Solutions
 
+Instead of disconnected calculation sheets, this underground estimating system maps your commercial bidding risks and engineering bottlenecks directly to automated spreadsheet solutions:
 
-## Quick Start Tutorial: How to Build Your Tunnel Cost Model
-
-1. **Step 1: Set the project parameters (Geometry & Assumptions).**
-   Enter the tunnel length, excavation section area, perimeter, overbreak allowance, and currency in the dedicated input area. Engineering inputs such as pull length, holes per round, explosive factor, and support spacing are maintained as independent variables.
-
-2. **Step 2: Load the commercial rates (Resource Pricing).**
-   Input material prices, equipment hourly rates, labour rates, and crew configurations into the structured rate databases. Transfer your supplier quotations directly into these tables to avoid hard-coding prices into calculation formulas.
-
-3. **Step 3: Generate the engineering and cost results (Automated Engine).**
-   Run the calculation engine to instantly convert your project geometry into blast cycles, drilling requirements, explosive/detonator consumption, support material quantities, and total operational hours.
-
-4. **Step 4: Review the BOQ and Cost Summary (Decision Output).**
-   Export the material BOQ to review category-level quantities and costs. Analyze the separated direct costs, operating margins, and unit-cost indicators for final decision-making.
-
-💡 **Ready to standardize your workflow?** After testing your project parameters in the free browser version, **[download the reusable Excel tunnel estimating template](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq)** to save your customized commercial rates and use it repeatedly for future underground construction tender submissions.
-
-## Real-World Scenarios: Who Uses This Drill and Blast Estimator?
-
-This platform is specifically engineered to bridge the gap between technical tunneling parameters and commercial bidding requirements. 
-
-### Tunnelling Contractors & Estimators
-* **Scenario:** Expanding from simple manpower supply into full-scope underground construction.
-* **Value:** Acts as a comprehensive **tunneling cost estimation software** to evaluate the financial exposure created by materials, equipment, and site operations, not just labour.
-
-### Quantity Surveyors (QS) & Commercial Managers
-* **Scenario:** Preparing accurate tender documents and material schedules for infrastructure projects.
-* **Value:** Serves as a structured **Bill of Quantities (BOQ) generation template** that links dynamically to current supplier price databases.
-
-### Project Managers & Underground Construction Planners
-* **Scenario:** Tracking project feasibility and daily advance rates against budget constraints.
-* **Value:** Functions as an **underground mining cost modeling tool** to test how changes in pull length or blast patterns impact the overall project margin.
-
-
-## Why I Built This
-
-Moving from manpower supply to full tunnelling responsibility changes the estimating problem.
-
-A manpower supplier can often work from labour hours and agreed labour rates. An end-to-end tunnelling contractor has to account for the entire construction cycle: **Drill → Load → Blast → Ventilation → Mucking → Support**. Materials, equipment, labour, and site operating costs become part of the contractor's exposure.
-
-That creates a practical estimating failure: the project may have a plausible labour number while the actual production cycle has not been translated into a complete resource and cost model.
-
-The purpose of this tool is to make that translation explicit.
-
-For example, a tunnel estimate should not stop at “the tunnel is 1,000 m long.” The length must interact with the assumed pull length to determine the number of blast cycles. The excavation section and overbreak assumption then affect excavation volume. The blast design drives drilling metres, explosive consumption, and detonator requirements. Support assumptions drive shotcrete, rock bolts, and steel arch quantities. Those quantities then need rates before they become a usable cost estimate.
-
-The workbook therefore treats estimating as a **connected reasoning chain**, rather than a collection of independent spreadsheets.
-
-The result is a reusable framework: change the project assumptions or commercial rates, and the downstream quantities and cost outputs can be recalculated without rewriting the model.
-
-
-## Common Underground Estimating Problems This Software Solves
-
-| Tunnelling Estimating Bottleneck | Traditional Manual Spreadsheet Methods | Automated BOQ & Cost Engine Solution |
+| Underground Estimating Pain Points (Bidding Risks) | What This Tunnel Cost Model Tracks | Automated BOQ & Cost Engine Solutions |
 | :--- | :--- | :--- |
-| **Labour-only Bidding Blindness** | Labour cost is estimated while heavy equipment and underground material exposure remains implicit. | Labour, material, and equipment requirements are calculated as connected parts of the drill-and-blast construction cycle. |
-| **Manual Quantity Extraction Gaps** | Tunnel length is known, but drilling, explosives, ground support, and excavation volumes require manual, error-prone math. | Engineering assumptions drive the required resource quantities through a centralized calculation engine. |
-| **Rate Duplication & Version Chaos** | Material and equipment rates are repeated inside individual calculation cells, making global updates difficult. | Rates are maintained in dedicated databases and dynamically referenced by the calculation layer via `XLOOKUP`. |
-| **Hidden Commercial Margins** | Overhead, contingency, and profit margins are mixed into an unexplained lump-sum project total. | Direct cost, operating cost, contingency, overhead, and margin are strictly separated in the cost summary dashboard. |
-| **Lack of Unit-Cost Indicators** | A project total gives little indication of whether the estimate is efficient relative to benchmark tunneling standards. | Total cost-per-metre ($/m) and cost-per-cubic-metre ($/m³) indicators expose the actual economics of the estimate. |
+| **Guessing Advance Rates & Blast Cycle Counts** | **Tunnel Length, Pull Length (Advance per Round) & Total Blast Cycles** | Automatically calculates exact drill-and-blast cycle counts (`Length ÷ Pull Length`) that drive all downstream time and resource costs. |
+| **Unaccounted Geological Overbreak & Mucking Volume** | **Design Cross-Section Area, Perimeter & Overbreak Allowance (`%`)** | Converts neat tunnel geometry and overbreak percentages into exact loose/bank cubic metres (`m³`) for excavation and mucking haulage. |
+| **Unpredictable Drilling & Explosives Consumption** | **Jumbo Drill Metres, Powder Factor (`kg/m³`), ANFO/Emulsion & Detonators** | Computes total blasthole drilling metres, drill rod/bit wear allowances, bulk explosive tonnage, and non-electric/electronic detonator counts. |
+| **Disconnected NATM Ground Support Takeoffs** | **Shotcrete Volume (`m³`), Rock Bolts (`pcs`) & Steel Arches/Ribs (`t`)** | Translates tunnel perimeter, shotcrete lining thickness, bolt grid spacing, and steel rib weights into a ready-to-price Material BOQ. |
+| **Incomplete Underground Plant & Crew Allocation** | **Jumbo, Loader/LHD, Shotcrete Sprayer Hours & Shift Labour Hours** | Generates heavy equipment operating hours and underground crew man-hours directly from the total number of excavation cycles. |
+| **Blended Overheads & Opaque Tender Margins** | **Direct Cost, Site Overhead, Risk Contingency, Profit Margin & Unit Rates (`$/m`, `$/m³`)** | Separates direct construction costs from commercial markups and outputs normalized cost-per-linear-metre (`$/m`) and cost-per-cubic-metre (`$/m³`) benchmarks. |
 
-## About
+---
 
-I build lightweight operational and decision-support tools for situations where there are too many moving parts to hold reliably in a spreadsheet assembled ad hoc.
+## Step-by-Step Tunnel Cost Estimating Tutorial: Quick Start Workflow
 
-The central question is simple:
+Follow this 4-step underground construction estimating workflow to generate a complete Material Bill of Quantities (BOQ) and unit-rate cost breakdown for your next tunnel or mining tender:
 
-> **What information needs to be in one place to make the next decision confidently?**
+### Step 1: Configure Tunnel Geometry, Overbreak & Drill-and-Blast Assumptions
+**[Action: Open the Free Web-Based Tunnel Cost Estimator](https://hyvoid.github.io/tunnel-cost-estimator-boq-excel/)** and enter your baseline geometric parameters in `01_Project_Inputs` and `02_Engineering_Assumptions`. Define total tunnel length, excavation cross-section area (`m²`), perimeter (`m`), overbreak percentage, pull length per round, blastholes per round, hole depth, powder factor (`kg/m³`), and ground support spacing.
 
-This tunnel estimating engine applies that approach to a specific problem: connecting tunnel geometry and construction assumptions to engineering quantities, resource requirements, BOQ outputs, and project cost.
+### Step 2: Populate Material Unit Prices, Equipment Rates & Underground Crew Costs
+Load your commercial pricing into the centralized `03_Price_Database` and `04_Resource_Rates` tables. Input current supplier quotes for explosives, detonators, drill steel, wet-mix shotcrete, rock bolts, and steel arches, alongside hourly ownership/rental rates for drilling jumbos, mucking loaders, ventilation fans, and underground labour crews.
 
-It is designed as a reusable analytical framework rather than a one-off project estimate.
+### Step 3: Execute the Automated Drill-and-Blast Calculation Engine
+Let `05_Drill_Blast_Engine` process your inputs. The model dynamically links tunnel geometry to construction cycles, instantly calculating total excavation volume, total drilling metres, consumable loss rates, ground support quantities, and total machine/labour hours without manual formula dragging.
 
+### Step 4: Audit the Material BOQ, Unit Costs (`$/m`, `$/m³`) & Download the Excel Template
+Review `06_Material_BOQ` and `07_Cost_Summary_Analysis` to inspect separated direct costs, site overheads, contingency reserves, target profit margins, and benchmark unit economics (`$/m` and `$/m³`).
 
-## Technical Details
+💡 **Standardize Your Future Tender Bids:** Once you validate your project numbers in the browser preview, **[Download the Full Reusable Excel Tunnel Estimating Template (`.xlsx`)](https://www.theseusworkshop.com/l/aquodj?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=tunnel-cost-estimator-boq)** to permanently save your proprietary supplier price databases, customize crew structures, and reuse the unlocked workbook across unlimited future civil tunneling and mining bids.
+
+---
+
+## The Business Logic & Methodology: Solving Commercial Blind Spots in Underground Bidding
+
+Whether you are a labor subcontractor bidding on your first full-scope tunnel contract, a project owner reviewing contractor quotes, or a junior estimator, the biggest financial losses in underground construction rarely come from bad arithmetic. They come from **commercial blind spots**—failing to understand how physical rock geometry triggers a chain reaction of hidden time, equipment, and material costs.
+
+Traditional spreadsheets treat a tunnel like a flat highway: they estimate Materials in one tab, Labour in another, and Equipment in a third. In reality, **underground tunneling is a repetitive factory cycle**:
+> **Drill Blastholes → Load Explosives → Blast & Ventilate → Muck Out Rock → Install Ground Support**
+
+This software was built around a **Cycle-Driven Business Logic** that protects you from three fatal bidding traps:
+
+### 1. The "Length Illusion" Blind Spot (Why Pull Length Dictates Your True Cost)
+* **The Commercial Problem:** Beginners look at a 1,000-metre tunnel and assume the cost is simply proportional to length. They miss the most important production driver: **Pull Length** (how many metres the tunnel advances in a single blast). If poor rock conditions force your crew to shorten each blast advance from `2.5 metres` to `2.0 metres`, the tunnel is still 1,000 metres long—but your required number of blast cycles jumps from **400 rounds to 500 rounds (+25% more cycles)**.
+* **How Our Business Logic Solves It:** Every extra blast cycle means setting up the drilling jumbo again, wiring another full round of detonators, waiting for smoke ventilation, and mobilizing the mucking crew an extra 100 times. This model locks **Blast Cycles (`Tunnel Length ÷ Pull Length`)** as the master heartbeat of the spreadsheet. When you adjust pull length by even 0.5 metres, the engine automatically recalculates the exact surge in detonators, drill bit wear, machine hours, and crew wages—exposing cost overruns before you sign a fixed-price contract.
+
+### 2. The "Overbreak Double-Penalty" Blind Spot (Paying Twice for Unplanned Rock)
+* **The Commercial Problem:** When blasting hard rock, the excavation never breaks cleanly along the blueprint line; it always shatters slightly wider. This extra shattered rock is called **Overbreak**. Inexperienced bidders ignore overbreak or treat it as a minor nuisance. In reality, overbreak hits your wallet twice: first, you spend extra explosives, loader fuel, and dump-truck hours hauling that extra rock out; second, you often have to pump expensive concrete or shotcrete back into that empty void to stabilize the tunnel arch.
+* **How Our Business Logic Solves It:** Instead of hiding overbreak inside rough guesses, the model makes **Overbreak Rate (`%`)** an explicit commercial slider. You can instantly see how a jump from 6% to 12% overbreak inflates both your excavation volume (`m³`) and your downstream explosive and haulage costs.
+
+### 3. The "Lump-Sum Markup Trap" (Separating Engineering Facts from Commercial Negotiation)
+* **The Commercial Problem:** When a client asks you to lower your bid price by 5%, estimators who mix unit prices, waste factors, overheads, and profit margins inside the same Excel cells panic. They don't know if cutting 5% means giving up half their profit or bidding below actual material cost.
+* **How Our Business Logicves It:** The workbook strictly separates **Physical Engineering Quantities** (how many kilograms of explosives and rock bolts the rock demands), **Procurement Unit Rates** (what suppliers charge you per unit), and **Commercial Layers** (site overhead, risk contingency, and net profit margin). During tender negotiations, you can adjust supplier quotes or trim your profit margin in seconds while knowing your exact break-even direct cost floor.
+
+---
+
+## Traditional Estimating Spreadsheets vs. Automated Drill-and-Blast BOQ Engine
+
+| Underground Estimating Operation | Fragile Ad-Hoc Excel Spreadsheets | Integrated Drill-and-Blast BOQ Engine |
+| :--- | :--- | :--- |
+| **Full-Scope Cycle Costing (Drill, Blast, Muck, Support)** | Estimates labour headcount while leaving heavy equipment hours and consumable wear implicit. | Connects drilling jumbos, explosives, ventilation, mucking, and NATM support to the exact blast-cycle count. |
+| **Quantity Takeoff (QTO) from Tunnel Geometry** | Estimators manually multiply cross-sections and re-type numbers into separate BOQ sheets, causing copy-paste errors. | Centralized geometry inputs (`Area`, `Perimeter`, `Length`, `Overbreak %`) automatically populate the entire Material BOQ. |
+| **Supplier Quote Updates & Rate Management** | Unit prices (`=C12*15.50`) are hard-coded inside hundreds of formulas, making supplier price updates a nightmare. | Dedicated `Price_Database` and `Resource_Rates` tabs dynamically feed the model via modern Excel `XLOOKUP` functions. |
+| **Commercial Markup & Contingency Auditing** | Site overheads, geological risk contingencies, and profit margins are buried inside inflated material unit rates. | Strictly isolates Direct Cost (Material + Labour + Plant) from Operating Overhead, Contingency (`%`), and Target Margin (`%`). |
+| **Benchmarking Unit Economics (`$/m` & `$/m³`)** | Outputs only a lump-sum tender price with no visibility into whether excavation efficiency matches industry norms. | Automatically computes total **Cost per Linear Metre (`$/m`)** and **Cost per Cubic Metre (`$/m³`)** for instant benchmarking. |
+
+---
+
+## Real-World Scenarios: Who Uses This Tunnel Cost Estimator & BOQ Template?
+
+This platform bridges the gap between geotechnical engineering design parameters and commercial tender pricing across civil construction and mining roles:
+
+* **Civil Tunnelling Contractors & Chief Estimators:** Transitioning from labour-only subcontracting to full turnkey underground contracting; using this *tunnel cost estimation software* to price materials, heavy plant depreciation, and site overheads accurately during competitive tender bids.
+* **Quantity Surveyors (QS) & Infrastructure Commercial Managers:** Using this *automated tunnel Bill of Quantities (BOQ) Excel template* to generate audit-ready material schedules, verify subcontractor payment claims, and run sensitivity checks on steel and concrete price fluctuations.
+* **Underground Hard Rock Mining Engineers & Mine Planners:** Deploying this *underground mining drift and ramp development cost model* to evaluate capital expenditure (CapEx) per metre of lateral advance, comparing different pull lengths and powder factors.
+* **Geotechnical & Tunnel Design Consultants:** Utilizing this *NATM preliminary cost calculator* during feasibility studies (FEL-1 / FEL-2) to compare cost trade-offs between different tunnel alignments, cross-section profiles, and rock support classes (shotcrete vs. rock bolts vs. steel ribs).
+* **Project Owners, EPCM Directors & Tender Evaluation Boards:** Leveraging this *independent shadow-bid estimating tool* to benchmark contractor tender submissions using standardized `$/m` and `$/m³` unit-cost metrics and spot unbalanced bidding.
+* **Explosives Technical Service Engineers & Drilling Consumable Suppliers:** Applying this *drill-and-blast resource consumption calculator* to demonstrate how optimized blast patterns, emulsion explosives, or longer pull lengths reduce overall total excavation cost per cubic metre for clients.
+
+---
+
+## Supported Underground Excavation & Tunnelling Project Scenarios
+
+To capture diverse geological and engineering configurations, this parametric cost model supports a wide range of drill-and-blast underground construction applications:
+
+1. **Highway, Railway & Metro Transit Tunnels (NATM):** Estimate single-tube or twin-tube transport tunnels requiring systematic rock bolting, fiber-reinforced shotcrete lining, and lattice girders / steel arches.
+2. **Hydroelectric Caverns, Headfacer Tunnels & Penstocks:** Model high-overbreak hard rock water conveyance tunnels and diversion adits with customized perimeter and section-area geometry.
+3. **Underground Hard Rock Mine Development (Drifts, Declines & Crosscuts):** Calculate lateral development cost per metre (`$/m`) for mining access ramps, haulage drifts, and ventilation shafts using jumbo drill rigs and LHD mucking fleets.
+4. **Municipal Utility Micro-Tunnels, Water & Sewer Conduits:** Price smaller-diameter rock excavation projects where tight cross-sections restrict pull lengths and increase cycle-driven labour intensity.
+
+---
+
+## Technical Architecture & Excel Formula Reference
 
 <details>
-<summary>For technical reviewers, Excel practitioners, and collaborators</summary>
+<summary><strong>Click to expand: 7-Sheet Workbook Architecture, Step-by-Step Numerical Case Study, Native Excel Formulas & Validation Rules (for technical reviewers & financial modelers)</strong></summary>
 
-### Workbook Architecture
+### Three-Layer Workbook Architecture
 
-The workbook is organized into three layers:
+The Excel workbook is structured into three strict architectural layers (**Input & Database Layer → Calculation Engine Layer → Commercial Output Layer**):
 
 ```text
 INPUT & ASSUMPTION LAYER
 │
 ├── 01_Project_Inputs
-│   └── Global project and commercial parameters
+│   └── Global tunnel geometry, overbreak %, currency & commercial markups
 │
 ├── 02_Engineering_Assumptions
-│   └── Drill-and-blast and support assumptions
+│   └── Drill-and-blast pattern, pull length, powder factor & NATM support parameters
 │
 ├── 03_Price_Database
-│   └── Material unit rates
+│   └── Centralized material unit rates (explosives, bolts, shotcrete, steel)
 │
 └── 04_Resource_Rates
-    └── Equipment rates, labour rates, crew configuration
+    └── Heavy equipment hourly rates, underground labour rates & crew configurations
             │
             ▼
-CALCULATION ENGINE
+CALCULATION ENGINE LAYER
 │
 └── 05_Drill_Blast_Engine
-    ├── Blast cycles
-    ├── Excavation volume
-    ├── Drilling metres
-    ├── Explosives
-    ├── Detonators
-    ├── Shotcrete
-    ├── Rock bolts
-    ├── Steel arches
-    ├── Equipment hours
-    └── Labour hours
+    ├── Total blast cycles (Rounds)
+    ├── Neat & overbreak excavation volume (m³)
+    ├── Total blasthole drilling metres (m) & rod wear
+    ├── Explosives (kg) & detonator quantities (pcs)
+    ├── Shotcrete volume (m³), rock bolts (pcs) & steel arch tonnage (t)
+    ├── Equipment operating hours
+    └── Underground crew labour hours
             │
             ├──────────────────────┐
             ▼                      ▼
-OUTPUT LAYER
+COMMERCIAL OUTPUT LAYER
 │
 ├── 06_Material_BOQ
-│   ├── Material quantities
-│   └── Material cost
+│   ├── Itemized material quantities
+│   └── Extended material cost via XLOOKUP
 │
 └── 07_Cost_Summary_Analysis
-    ├── Material cost
-    ├── Labour cost
-    ├── Equipment cost
-    ├── Direct cost
-    ├── Operating cost
-    ├── Contingency
-    ├── Overhead
-    ├── Margin
-    ├── Cost / m
-    └── Cost / m³
+    ├── Material, Labour & Equipment direct cost breakdown
+    ├── Site operating cost, Contingency & Overhead layers
+    ├── Target commercial profit margin
+    └── Unit-cost benchmarks: Cost per Metre ($/m) & Cost per Cubic Metre ($/m³)
 ```
 
-The intended data direction is **input → calculation → output**.
+The intended data flow is strictly unidirectional (**Input → Calculation → Output**). Updating a supplier quote in `03_Price_Database` never requires rewriting formulas in `05_Drill_Blast_Engine`, and modifying tunnel length in `01_Project_Inputs` dynamically cascades through the BOQ and executive summary.
 
-The four input sheets provide the assumptions and rate sources. The drill-and-blast engine consumes those inputs and produces engineering and resource quantities. The BOQ and cost summary then consume the engine outputs.
+| Worksheet Name | Primary Functional Role | Data Behavior |
+| :--- | :--- | :--- |
+| **`01_Project_Inputs`** | Tunnel geometry, overbreak allowance, currency, commercial rates | Manual user input |
+| **`02_Engineering_Assumptions`** | Drill-and-blast round parameters & ground support design inputs | Manual user input |
+| **`03_Price_Database`** | Procurement unit prices and measurement units for all consumables | Maintained rate database |
+| **`04_Resource_Rates`** | Underground plant hourly rates, crew roles, and labour wage rates | Maintained rate database |
+| **`05_Drill_Blast_Engine`** | Core engineering quantity and cycle resource calculation engine | 100% Formula-driven |
+| **`06_Material_BOQ`** | Structured Bill of Quantities with automated unit-rate matching | 100% Formula-driven |
+| **`07_Cost_Summary_Analysis`** | Executive tender summary, commercial layers, and `$/m` & `$/m³` KPIs | 100% Formula-driven |
 
-This separation matters because a rate change should not require a calculation rewrite. Likewise, changing a tunnel assumption should not require manually editing the BOQ.
+---
 
-| Sheet                        | Primary Role                                       | Data Behavior       |
-| ---------------------------- | -------------------------------------------------- | ------------------- |
-| `01_Project_Inputs`          | Project geometry, currency, commercial assumptions | Manual input        |
-| `02_Engineering_Assumptions` | Blast and support design assumptions               | Manual input        |
-| `03_Price_Database`          | Material prices and units                          | Maintained database |
-| `04_Resource_Rates`          | Equipment and labour rates                         | Maintained database |
-| `05_Drill_Blast_Engine`      | Engineering/resource calculation                   | Formula-driven      |
-| `06_Material_BOQ`            | Material quantity and cost output                  | Formula-driven      |
-| `07_Cost_Summary_Analysis`   | Cost and unit economics                            | Formula-driven      |
+### Three Technical Estimating Traps That Catch Experienced Tunnel Bidders
 
-### Three Traps That Catch Even Experienced Tunnelling Estimators
+#### Trap 1 — Estimating Linear Tunnel Length Instead of the Construction Cycle
+A 1,000 m tunnel with a `2.0 m` pull length requires **500 cycles**, whereas a `4.0 m` pull length requires **250 cycles**. The model enforces `Blast Cycles = Tunnel Length / Pull Length` as the primary production driver for drilling, detonators, mucking hours, and shift labour.
 
-#### Trap 1 — Estimating the Tunnel, Not the Construction Cycle
+#### Trap 2 — Conflating Physical Engineering Quantities with Commercial Prices
+Embedding prices inside quantity formulas makes procurement auditing impossible. This workbook enforces a strict separation:
+`Engineering Quantity` → `Material / Resource Unit Rate (via XLOOKUP)` → `Extended Cost`.
 
-A decision may be made from tunnel length alone: a 1,000 m tunnel appears to have a straightforward quantity basis.
+#### Trap 3 — Blending Commercial Allowances Inside Direct Costs
+Mixing site overhead, geological risk contingency, and profit margin into material rates hides the true break-even baseline. The model applies commercial parameters (`Overhead_Rate`, `Contingency_Rate`, `Profit_Margin_Rate`) as transparent, inspectable layers on top of `Direct Cost Subtotal`.
 
-The unnoticed problem is that length does not define the number of construction cycles. A 2 m pull and a 4 m pull produce very different cycle counts.
+---
 
-The model therefore makes the relationship explicit:
+### Quantitative Case Study: 1,000m Hard Rock Tunnel Underwriting Scenario
 
-```text
-Blast Cycles = Tunnel Length / Pull Length
-```
+The following illustrative scenario demonstrates how the engine translates geometric and blasting inputs into exact BOQ quantities:
 
-The corrected approach is to treat the assumed pull length as a production parameter. Once cycle count is established, drilling, explosives, detonators, equipment hours, and labour hours can be related to those cycles.
+| Engineering / Geometric Input | Assumed Value |
+| :--- | ---: |
+| **Tunnel Length (`Tunnel_Length`)** | `1,000 m` |
+| **Excavation Cross-Section Area (`Section_Area`)** | `50 m²` |
+| **Geological Overbreak Allowance (`Overbreak_Rate`)** | `8%` |
+| **Pull Length / Advance per Round (`Pull_Length`)** | `2.5 m` |
+| **Blastholes per Round (`Holes_Per_Round`)** | `110 holes` |
+| **Drilled Hole Depth (`Hole_Depth`)** | `2.8 m` |
+| **Powder / Explosive Factor (`Explosive_Factor`)** | `1.8 kg/m³` |
+| **Detonators per Round (`Detonator_Per_Round`)** | `110 pcs` |
+| **Shotcrete Lining Thickness (`Shotcrete_Thickness`)** | `0.10 m` |
+| **Rock-Bolt Spacing & Length** | `1.5 m spacing / 3.0 m length` |
+| **Steel Arch / Rib Spacing (`Steel_Arch_Spacing`)** | `1.5 m` |
 
-The resulting decision is not simply “how long is the tunnel?” but “what resource exposure does the assumed construction cycle create?”
+1. **Blast Cycle Basis:**
+   `Blast Cycles = 1,000 m ÷ 2.5 m = 400 cycles (rounds)`
+2. **Total Excavation Volume (Including Overbreak):**
+   `Excavation Volume = 50 m² × 1,000 m × (1 + 0.08) = 54,000 m³`
+3. **Total Jumbo Drilling Requirement:**
+   `Drilling Metres = 400 cycles × 110 holes × 2.8 m = 123,200 drilled metres`
+4. **Total Commercial Explosives Required:**
+   `Explosive Quantity = 54,000 m³ × 1.8 kg/m³ = 97,200 kg`
+5. **Total Detonators Required:**
+   `Detonators = 400 cycles × 110 pcs = 44,000 pcs`
 
-#### Trap 2 — Treating Quantity and Cost as the Same Number
+*Sensitivity Insight:* If rock mass quality degrades and forces `Pull_Length` down from `2.5 m` to `2.0 m`, `Blast Cycles` immediately jump from `400` to `500`, automatically increasing drilling metres, detonators, equipment hours, and crew labour across the entire tender summary.
 
-A material requirement can be correctly estimated while its commercial impact remains unclear.
+---
 
-For example, knowing the required explosive quantity does not establish its cost until the relevant unit rate is applied. The same applies to drilling consumables, shotcrete, steel, and other materials.
-
-The corrected model separates:
-
-```text
-Engineering Quantity
-        ↓
-Material / Resource Unit Rate
-        ↓
-Cost
-```
-
-This allows procurement or rate assumptions to change without changing the engineering quantity.
-
-The result is a clearer distinction between **what the project consumes** and **what that consumption costs**.
-
-#### Trap 3 — Hiding Commercial Allowances Inside the Project Total
-
-A final project number can look precise even when direct cost, operating cost, contingency, overhead, and margin have been blended together.
-
-That makes it difficult to identify what is driving the estimate and what would change if the commercial assumptions changed.
-
-The corrected approach maintains separate commercial parameters and applies them in the cost summary.
-
-```text
-Direct Cost
-    ↓
-Operating / Overhead / Contingency Layers
-    ↓
-Commercial Margin
-    ↓
-Project Cost / Target Commercial Result
-```
-
-The purpose is not to make the estimate look more sophisticated. It is to make the source of the final number inspectable.
-
-<!-- README Part 2 of 3 -->
-
-<!-- Continuation of the same README document. -->
-
-<!-- IMPORTANT: The parent Technical Details <details> opened in Part 1 remains OPEN. -->
-
-### Example Scenario
-
-The following is an **illustrative estimating scenario**, not a project-specific engineering recommendation. The values demonstrate how the workbook connects project geometry, construction assumptions, quantities, and commercial rates.
-
-Assume a drill-and-blast tunnel with:
-
-| Input                   | Illustrative Value |
-| ----------------------- | -----------------: |
-| Tunnel length           |            1,000 m |
-| Excavation section area |              50 m² |
-| Overbreak rate          |                 8% |
-| Pull length             |              2.5 m |
-| Holes per round         |                110 |
-| Hole depth              |              2.8 m |
-| Explosive factor        |          1.8 kg/m³ |
-| Detonators per round    |                110 |
-| Shotcrete thickness     |             0.10 m |
-| Rock-bolt spacing       |              1.5 m |
-| Rock-bolt length        |              3.0 m |
-| Steel arch spacing      |              1.5 m |
-
-The first calculation establishes the construction-cycle basis:
-
-```text
-Blast Cycles
-= Tunnel Length / Pull Length
-= 1,000 / 2.5
-= 400 cycles
-```
-
-The excavation-volume basis, including the assumed overbreak allowance, becomes:
-
-```text
-Excavation Volume
-= Section Area × Tunnel Length × (1 + Overbreak Rate)
-= 50 × 1,000 × 1.08
-= 54,000 m³
-```
-
-The drilling requirement based on the assumed holes per round and hole depth is:
-
-```text
-Drilling Metres
-= Blast Cycles × Holes per Round × Hole Depth
-= 400 × 110 × 2.8
-= 123,200 m
-```
-
-The explosive quantity, using the stated illustrative factor, is:
-
-```text
-Explosive Quantity
-= Excavation Volume × Explosive Factor
-= 54,000 × 1.8
-= 97,200 kg
-```
-
-The detonator requirement is:
-
-```text
-Detonators
-= Blast Cycles × Detonators per Round
-= 400 × 110
-= 44,000 pcs
-```
-
-These outputs are then passed to the BOQ and cost layers. Material quantities are matched to the maintained price database, while equipment and labour requirements are matched to the resource-rate layer.
-
-The important estimating implication is that a single change in an upstream assumption can affect multiple downstream outputs. A change from a 2.5 m pull to a 2.0 m pull increases the cycle count from 400 to 500. That does not merely change one line item: it changes cycle-driven drilling, explosives, detonators, equipment hours, labour hours, and associated costs.
-
-The workbook therefore makes **assumption sensitivity visible before commercial decisions are finalized**.
-
-### Formula Reference
+### Modular Formula Reference (100% Native Excel, Zero VBA)
 
 <details>
-<summary>Project Geometry and Cycle Calculations</summary>
-
-#### Blast Cycle Count
-
-**Purpose:** Determine the number of excavation/blast cycles implied by tunnel length and assumed pull length.
+<summary><strong>1. Project Geometry, Cycles & Unit Cost Indicators</strong></summary>
 
 ```excel
+// Blast Cycle Count
 =Tunnel_Length/Pull_Length
-```
 
-The source architecture defines this relationship as:
-
-```text
-Cycles = Tunnel Length / Pull Length
-```
-
-The result becomes a driver for cycle-based resource calculations.
-
-#### Excavation Volume
-
-**Purpose:** Convert section geometry and tunnel length into estimated excavation volume while incorporating the stated overbreak allowance.
-
-```excel
+// Total Excavation Volume (incorporating overbreak allowance)
 =Section_Area*Tunnel_Length*(1+Overbreak_Rate)
+
+// Normalized Unit Cost Benchmarks
+Cost per Linear Metre ($/m)  = Total_Project_Cost / Tunnel_Length
+Cost per Cubic Metre ($/m³)  = Total_Project_Cost / Excavation_Volume
 ```
-
-The architecture explicitly identifies this relationship as:
-
-```text
-Volume = Section Area × Tunnel Length × (1 + Overbreak)
-```
-
-This means the overbreak assumption is maintained as an input rather than hidden inside the calculation.
-
-#### Unit Cost Indicators
-
-The output layer is designed to expose:
-
-```text
-Cost per metre
-= Total Project Cost / Tunnel Length
-
-Cost per cubic metre
-= Total Project Cost / Excavation Volume
-```
-
-These indicators provide a normalized view of project economics alongside the absolute project total. The source specifically identifies `$ / m` and `$ / m³` as key outputs.
 
 </details>
 
 <details>
-<summary>Drilling, Explosives, and Detonator Calculations</summary>
-
-#### Drilling Metres
-
-A cycle-based drilling calculation can be expressed as:
+<summary><strong>2. Drilling, Explosives & Detonator Calculations</strong></summary>
 
 ```excel
+// Total Drilling Metres (with optional Drill_Rod_Loss_Rate parameter)
 =Blast_Cycles*Holes_Per_Round*Hole_Depth
-```
 
-The underlying inputs are explicitly defined in the architecture as `Pull_Length`, `Holes_Per_Round`, and `Hole_Depth`.
-
-Where a drill-rod loss assumption is maintained, the model can additionally account for the specified `Drill_Rod_Loss_Rate` as an engineering/resource parameter rather than embedding a fixed allowance in the formula.
-
-#### Explosive Quantity
-
-Where explosive consumption is expressed as a volume-based factor:
-
-```excel
+// Explosive Quantity (explicitly defined as kg/m³ or kg/cycle)
 =Excavation_Volume*Explosive_Factor
-```
 
-The source allows the explosive factor to be expressed as either `kg/m³` or `kg/cycle`, so the implementation must keep the selected basis explicit rather than silently mixing the two.
-
-#### Detonator Quantity
-
-For a cycle-based detonator assumption:
-
-```excel
+// Detonator Quantity
 =Blast_Cycles*Detonator_Per_Round
 ```
 
-This maintains the relationship between the blast-cycle count and the number of detonators assumed for each round.
+</details>
+
+<details>
+<summary><strong>3. Ground Support Quantity Calculations (NATM)</strong></summary>
+
+Driven by explicit engineering assumptions (`Shotcrete_Thickness`, `Rock_Bolt_Spacing`, `Rock_Bolt_Length`, `Steel_Arch_Weight_Per_M`, `Steel_Arch_Spacing`) to output:
+* `Total_Shotcrete_Vol` (`m³`)
+* `Total_Rock_Bolts_Qty` (`pcs`)
+* `Total_Steel_Arch_Weight` (`tonnes` / `kg`)
 
 </details>
 
 <details>
-<summary>Support Quantity Calculations</summary>
+<summary><strong>4. Dynamic Rate Lookup & Direct Costing (XLOOKUP Architecture)</strong></summary>
 
-The support layer uses engineering assumptions such as:
+```excel
+// Dynamic Material Rate Retrieval (No hard-coded prices)
+=XLOOKUP(Material_Name, Price_Database[Material], Price_Database[Rate])
 
-* `Shotcrete_Thickness`
-* `Rock_Bolt_Spacing`
-* `Rock_Bolt_Length`
-* `Steel_Arch_Weight_Per_M`
-* `Steel_Arch_Spacing`
-
-The source architecture identifies the corresponding outputs as:
-
-```text
-Total_Shotcrete_Vol
-Total_Rock_Bolts_Qty
-Total_Steel_Arch_Weight
+// Extended Direct Costs
+Material Cost  = Material_Quantity * Material_Unit_Rate
+Labour Cost    = Labour_Hours * Labour_Hourly_Rate
+Equipment Cost = Equipment_Hours * Equipment_Hourly_Rate
 ```
-
-The exact support formulas should therefore follow the approved engineering basis for the project. The workbook architecture intentionally treats these values as assumptions rather than presenting one universal support design.
 
 </details>
 
 <details>
-<summary>Rate Lookup and Cost Calculation</summary>
+<summary><strong>5. Commercial Markup & Margin Waterfall</strong></summary>
 
-#### Material Rate Lookup
-
-Material costs should not contain embedded rates such as:
-
-```excel
-=Quantity*15.5
-```
-
-Instead, the source specifies a centralized price database and an `XLOOKUP`-based retrieval pattern:
-
-```excel
-=XLOOKUP(
-    Material_Name,
-    Price_Database[Material],
-    Price_Database[Rate]
-)
-```
-
-This allows a supplier quotation or procurement rate to be updated once in the price database and automatically flow through downstream calculations.
-
-#### Material Cost
-
-```excel
-=Material_Quantity*Material_Unit_Rate
-```
-
-The BOQ therefore keeps **Quantity** and **Cost** conceptually separate, allowing quantity assumptions and commercial rates to be reviewed independently.
-
-#### Labour Cost
-
-```excel
-=Labour_Hours*Labour_Hourly_Rate
-```
-
-The labour rate is retrieved from the resource-rate layer rather than hard-coded into the engine.
-
-#### Equipment Cost
-
-```excel
-=Equipment_Hours*Equipment_Hourly_Rate
-```
-
-The same principle applies to equipment: the engine calculates the required hours, while the resource-rate layer supplies the applicable hourly rate.
+Maintains `Overhead_Rate`, `Contingency_Rate`, and `Profit_Margin_Rate` in `01_Project_Inputs` and applies them cleanly in `07_Cost_Summary_Analysis`:
+`Direct Cost Subtotal (Material + Labour + Equipment)` → `+ Operating / Overhead / Contingency Layers` → `+ Commercial Profit Margin` → `Total Tender Bid Price`.
 
 </details>
 
-<details>
-<summary>Commercial Cost Layers</summary>
-
-The project input layer maintains the commercial parameters separately, including:
-
-* `Overhead_Rate`
-* `Contingency_Rate`
-* `Profit_Margin_Rate`
-
-The source specifically places these commercial parameters in `01_Project_Inputs` and references them from `07_Cost_Summary_Analysis`.
-
-A representative cost-layer structure is:
-
-```text
-Material Cost
-        +
-Labour Cost
-        +
-Equipment Cost
-        =
-Direct Cost Subtotal
-        ↓
-Project Operating / Overhead / Contingency Layers
-        ↓
-Commercial Margin
-        ↓
-Project-Level Commercial Result
-```
-
-The important implementation principle is **single-point maintenance**. Changing an overhead or contingency assumption should update the summary without editing individual cost formulas.
-
-
-### Validation Rules
-
-The validation layer should prevent invalid assumptions from silently producing apparently precise quantities.
-
-| Field                 | Rule                                                             | Error Behavior                                           |
-| --------------------- | ---------------------------------------------------------------- | -------------------------------------------------------- |
-| `Tunnel_Length`       | Must be greater than zero                                        | Reject or flag the project calculation                   |
-| `Section_Area`        | Must be greater than zero                                        | Reject or flag excavation-volume calculation             |
-| `Perimeter`           | Must be a positive geometric input                               | Flag invalid project geometry                            |
-| `Overbreak_Rate`      | Must be expressed as a valid rate                                | Flag invalid percentage input                            |
-| `Pull_Length`         | Must be greater than zero                                        | Prevent division-by-zero cycle calculation               |
-| `Holes_Per_Round`     | Must be a positive whole-number assumption                       | Flag invalid blast configuration                         |
-| `Hole_Depth`          | Must be greater than zero                                        | Prevent invalid drilling calculation                     |
-| `Explosive_Factor`    | Must use a clearly defined basis such as `kg/m³` or `kg/cycle`   | Prevent ambiguous explosive calculation                  |
-| `Detonator_Per_Round` | Must be a valid cycle-level quantity                             | Flag inconsistent detonator calculation                  |
-| `Drill_Rod_Loss_Rate` | Must be a valid non-negative rate                                | Prevent negative or invalid consumption adjustment       |
-| `Shotcrete_Thickness` | Must be non-negative and expressed consistently in project units | Flag invalid support assumption                          |
-| `Rock_Bolt_Spacing`   | Must be greater than zero                                        | Prevent invalid bolt-count calculation                   |
-| `Rock_Bolt_Length`    | Must be greater than zero when bolts are included                | Flag incomplete support configuration                    |
-| `Steel_Arch_Spacing`  | Must be greater than zero when steel arches are included         | Prevent invalid arch quantity calculation                |
-| Material lookup key   | Material must exist in `Price_Database`                          | Flag missing rate rather than silently assigning a value |
-| Equipment lookup key  | Equipment must exist in `Resource_Rates`                         | Flag missing hourly rate                                 |
-| Labour lookup key     | Labour category must exist in `Resource_Rates`                   | Flag missing labour rate                                 |
-| `Overhead_Rate`       | Must be a valid percentage                                       | Flag invalid commercial assumption                       |
-| `Contingency_Rate`    | Must be a valid percentage                                       | Flag invalid commercial assumption                       |
-| `Profit_Margin_Rate`  | Must be a valid percentage                                       | Flag invalid commercial assumption                       |
-| Currency code         | Must be populated before financial outputs are presented         | Flag incomplete commercial setup                         |
-
-The source defines the relevant input and output fields but does not prescribe a complete error-message library or every worksheet-level validation implementation. Those details should therefore be treated as implementation controls rather than as fixed engineering standards.
-
-### Implementation Principles
-
-#### 1. One Source of Truth for Commercial Rates
-
-Rates belong in the rate databases.
-
-```text
-Price Database
-      │
-      ├── Material Rate
-      │
-      ▼
-Calculation Engine
-      │
-      ▼
-Material BOQ
-      │
-      ▼
-Cost Summary
-```
-
-This avoids duplicated rates and makes commercial updates auditable.
-
-#### 2. Engineering Assumptions Are Inputs, Not Hidden Formula Constants
-
-The model explicitly separates project geometry, blast assumptions, support assumptions, resource rates, and commercial parameters.
-
-This allows the estimator to distinguish between:
-
-```text
-Engineering assumption
-        ≠
-Resource rate
-        ≠
-Commercial allowance
-```
-
-That distinction is essential when reviewing why an estimate changed.
-
-#### 3. Dynamic Formula Architecture
-
-The implementation is intended to use modern Excel functions such as:
-
-```excel
-XLOOKUP()
-FILTER()
-LET()
-```
-
-with dynamic-array spill behavior so that formula ranges do not have to be manually extended whenever the underlying dataset grows.
-
-The objective is not formula complexity. The objective is **repeatability with fewer manual maintenance points**.
-
-#### 4. Quantity and Cost Remain Traceable
-
-The output architecture deliberately separates:
-
-```text
-Quantity
-   ↓
-Unit Rate
-   ↓
-Cost
-```
-
-rather than presenting only a final monetary total.
-
-This makes the estimate easier to challenge. If the cost looks wrong, the reviewer can ask whether the issue is quantity, rate, or both.
-
-### Limitations and Appropriate Use
-
-This workbook should be treated as an **estimating and decision-support engine**, not as an engineering design authority.
-
-The source architecture defines calculation relationships and the required assumption fields, but it does not establish universal values for blast design, geotechnical conditions, support classes, equipment productivity, labour productivity, procurement logistics, or site-specific construction constraints.
-
-Accordingly:
-
-* Blast parameters should come from the applicable engineering basis.
-* Support assumptions should reflect the project's geotechnical and structural requirements.
-* Material prices should reflect current procurement conditions.
-* Equipment rates should reflect the actual ownership, rental, operating, or internal costing basis.
-* Labour rates and crew structures should reflect the intended operating model.
-* Overhead, contingency, and margin should be commercial decisions rather than assumed engineering constants.
-* The resulting BOQ should be reviewed before it is used for procurement or contractual commitment.
-
-The workbook's value is in **connecting assumptions consistently**, not in deciding whether those assumptions are technically appropriate for a particular tunnel.
-
-
-
-### Reproducibility Checklist
-
-Before using an estimate for commercial or operational decisions, the following review sequence should be completed:
-
-1. **Project geometry**
-
-   * Confirm tunnel length.
-   * Confirm excavation section area.
-   * Confirm perimeter and applicable geometric basis.
-   * Confirm the overbreak assumption.
-
-2. **Blast assumptions**
-
-   * Confirm pull length.
-   * Confirm holes per round.
-   * Confirm hole depth.
-   * Confirm explosive consumption basis.
-   * Confirm detonator quantity per round.
-   * Confirm drilling-consumable assumptions.
-
-3. **Support assumptions**
-
-   * Confirm shotcrete thickness.
-   * Confirm rock-bolt spacing and length.
-   * Confirm steel-arch spacing and unit weight where applicable.
-
-4. **Resource assumptions**
-
-   * Confirm equipment hourly rates.
-   * Confirm labour hourly rates.
-   * Confirm crew configuration.
-   * Confirm whether rates represent ownership, rental, operating, or internal costing assumptions.
-
-5. **Commercial assumptions**
-
-   * Confirm material prices.
-   * Confirm overhead.
-   * Confirm contingency.
-   * Confirm target margin.
-   * Confirm currency.
-
-6. **Output review**
-
-   * Check total excavation volume.
-   * Check blast-cycle count.
-   * Check drilling metres.
-   * Check explosives and detonators.
-   * Check support quantities.
-   * Check equipment and labour hours.
-   * Check material, labour, and equipment cost.
-   * Check direct cost and project-level cost.
-   * Check `$ / m` and `$ / m³` indicators.
-
-The source architecture explicitly defines these input and output categories as the cross-check basis for the workbook.
-
-### Data Flow Summary
-
-The complete calculation chain can be summarized as:
-
-```text
-PROJECT GEOMETRY
-        │
-        ▼
-ENGINEERING ASSUMPTIONS
-        │
-        ├───────────────┐
-        │               │
-        ▼               ▼
-BLAST / EXCAVATION    SUPPORT
-CALCULATIONS          CALCULATIONS
-        │               │
-        └───────┬───────┘
-                ▼
-        RESOURCE REQUIREMENTS
-        ├── Drilling
-        ├── Explosives
-        ├── Detonators
-        ├── Shotcrete
-        ├── Rock Bolts
-        ├── Steel Arches
-        ├── Equipment Hours
-        └── Labour Hours
-                │
-                ▼
-        RATE DATABASES
-        ├── Material Rates
-        ├── Equipment Rates
-        └── Labour Rates
-                │
-                ▼
-             COSTING
-        ├── Material Cost
-        ├── Labour Cost
-        ├── Equipment Cost
-        └── Direct Cost
-                │
-                ▼
-       COMMERCIAL ADJUSTMENTS
-        ├── Operating / Overhead
-        ├── Contingency
-        └── Margin
-                │
-                ▼
-       DECISION OUTPUTS
-        ├── Material BOQ
-        ├── Total Project Cost
-        ├── Cost / m
-        └── Cost / m³
-```
-
-This structure is the core of the workbook: engineering assumptions are translated into measurable resource requirements, and those requirements are then translated into a transparent commercial estimate.
-
-### Extension Opportunities
-
-The current architecture establishes a foundation that can be extended without changing its fundamental data flow.
-
-Potential extensions include:
-
-* Additional support classes for different geological conditions.
-* More detailed equipment productivity assumptions.
-* Separate operating, ownership, rental, and fuel-cost components.
-* Procurement lead-time and material-delivery planning.
-* Production-cycle sensitivity analysis.
-* Alternative blast-pattern scenarios.
-* Bid-price and target-margin simulations.
-* Actual-versus-estimate project cost tracking after construction begins.
-* Historical project benchmarking using normalized `$ / m` and `$ / m³` indicators.
-
-These are extensions rather than requirements of the current architecture. The uploaded source defines the seven-sheet core system and its primary calculation chain; it does not specify a full project execution or actual-cost accounting module.
-
-### What the Workbook Is Really Designed to Do
-
-The central design principle is simple:
-
-```text
-Do not estimate each cost category independently.
-
-Build the estimate from the construction cycle.
-```
-
-Tunnel geometry determines the physical scale.
-
-Engineering assumptions determine the construction requirements.
-
-Construction requirements determine resource consumption.
-
-Resource consumption determines quantities and hours.
-
-Rates convert quantities and hours into cost.
-
-Commercial assumptions convert direct cost into a project-level commercial view.
-
-That makes the workbook useful not only for producing a number, but for understanding **why the number is what it is**.
-
-</details>
-</details>
-
-
-## Other Tools in This Series
-
-Theseus Workshop builds lightweight Excel-based decision-support tools for operational problems where a connected calculation workflow is more useful than a generic dashboard.
-
-Related tools cover areas such as:
-
-* **Single-Project Construction Control Workbook** — project budget, actual cost, change orders, progress billing, collections, and cash flow.
-* **Contractor Operations & Profitability Management System** — Lead → Estimate → Job → Labor & Materials → Job Cost → Profit → Customer History.
-* **Warehouse Billing Control System** — operational records translated into recurring billing and reconciliation.
-* **Freight Forwarding Booking-Level Profitability Engine** — revenue, COGS, fees, profit, and margin at booking level.
-
-## License
-
-This project is released under the **Apache License 2.0**.
-
-You may use, reproduce, modify, and distribute the work subject to the terms and conditions of the Apache License 2.0.
-
-See the [`LICENSE`](LICENSE) file for the complete license text.
+---
+
+### Built-In Input Validation & Error Prevention Rules
+
+| Input Parameter | Validation Rule | Safeguard / Error Behavior |
+| :--- | :--- | :--- |
+| **`Tunnel_Length` & `Section_Area`** | Must be strictly `> 0` | Rejects or flags invalid geometric volume calculation |
+| **`Perimeter`** | Must be a positive geometric input (`> 0`) | Flags invalid tunnel profile geometry |
+| **`Overbreak_Rate`** | Must be a valid non-negative percentage | Flags invalid overbreak input |
+| **`Pull_Length`** | Must be strictly `> 0` | Prevents `#DIV/0!` division-by-zero in cycle calculation |
+| **`Holes_Per_Round` & `Hole_Depth`** | Positive whole number / positive depth (`> 0`) | Flags invalid drill-and-blast pattern |
+| **`Explosive_Factor`** | Must specify explicit basis (`kg/m³` or `kg/cycle`) | Prevents unit-basis mixing errors |
+| **`Detonator_Per_Round` & `Drill_Rod_Loss_Rate`** | Valid non-negative cycle quantity / wear rate | Prevents negative consumption adjustments |
+| **`Shotcrete_Thickness`, `Rock_Bolt_Spacing`, `Steel_Arch_Spacing`** | Non-negative thickness; spacing strictly `> 0` | Prevents division-by-zero in support takeoffs |
+| **Material, Equipment & Labour Lookup Keys** | Must exist in `Price_Database` / `Resource_Rates` | Flags missing unit rate instead of returning silent `0` |
+| **`Overhead_Rate`, `Contingency_Rate`, `Profit_Margin_Rate`** | Valid percentage inputs + populated Currency Code | Flags incomplete commercial tender setup |
+
+---
+
+### Reproducibility & Pre-Bid Audit Checklist
+
+Before submitting a commercial tender or finalizing a feasibility budget, complete this 6-point verification sequence:
+
+1. **Project Geometry:** Confirm `Tunnel_Length`, `Section_Area`, `Perimeter`, and `Overbreak_Rate`.
+2. **Blast Design Assumptions:** Confirm `Pull_Length`, `Holes_Per_Round`, `Hole_Depth`, `Explosive_Factor` basis, `Detonator_Per_Round`, and drill consumable wear rates.
+3. **Ground Support Design:** Confirm `Shotcrete_Thickness`, `Rock_Bolt_Spacing` & length, and `Steel_Arch_
