@@ -131,17 +131,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="p-5 border-b border-[#E8E8E6]">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-lg bg-[#2251FF] flex items-center justify-center text-white shadow-xs">
-                <Layers className="w-4 h-4 text-white" />
+              <div className="w-9 h-9 rounded-lg bg-[#2251FF] flex items-center justify-center text-white shadow-xs shrink-0">
+                <Layers className="w-5 h-5 text-white" />
               </div>
               <div className="min-w-0">
-                <div className="flex items-center space-x-1.5">
-                  <span className="serif text-base font-bold tracking-tight text-[#051C2C] leading-snug">
-                    Tunnel Drill-and-Blast
-                  </span>
+                <div className="serif text-base font-bold tracking-tight text-[#051C2C] leading-tight">
+                  Theseus Workshop
                 </div>
-                <div className="text-[11px] text-[#2251FF] font-medium font-sans mt-0.5 leading-tight">
-                  Cost Estimation &amp; BOQ Engine
+                <div className="text-[11px] font-medium text-[#2251FF] font-sans mt-0.5 leading-tight">
+                  Drill &amp; Blast BOQ &amp; Cost Engine
                 </div>
               </div>
             </div>

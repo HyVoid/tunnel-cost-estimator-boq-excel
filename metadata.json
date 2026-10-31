@@ -1,6 +1,6 @@
 {
-  "name": "Tunnel Drill-and-Blast Cost Estimation & BOQ Engine",
-  "description": "Professional SaaS tool for end-to-end drill & blast tunnel quantity takeoff, material BOQ generation, and dynamic cost estimation with real-time formula computation.",
+  "name": "Theseus Workshop - Drill & Blast Tunnel Cost Estimation & BOQ Engine",
+  "description": "Theseus Workshop Drill & Blast Tunnel Cost Estimation & BOQ Engine. Comprehensive drill & blast quantity takeoff, material BOQ calculation, and dynamic cost estimation.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
 
         {/* Right: Version and system tags */}
         <div className="flex items-center space-x-4 text-[10px] font-bold text-[#051C2C] uppercase tracking-widest shrink-0 font-mono">
-          <span className="text-[#888888]">Tunnel Drill-and-Blast Engine</span>
+          <span className="text-[#888888]">Theseus Workshop • Drill & Blast Engine</span>
           <span className="text-[#888888]">•</span>
           <span className="text-[#051C2C]">v2.1.0-LIGHT</span>
         </div>
