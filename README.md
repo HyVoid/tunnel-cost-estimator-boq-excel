@@ -26,6 +26,14 @@ Run rapid tunnel feasibility checks and quantity takeoffs (QTO) directly in our 
 >
 > *Engineering Disclaimer: This software functions strictly as a commercial cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace site-specific geotechnical investigations or certified design authorizations by licensed Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in determining blast patterns, powder factors, perimeter presplit spacing, rock mass classifications (Q-system, RMR, GSI), or structural ground support classes.*
 
+## Spreadsheet Preview
+
+Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
+
+**[View Spreadsheet Preview on Google Sheets](https://docs.google.com/spreadsheets/d/1YM18QYWjgFGX-EKUDCkUJcKffMtm9Vtk/edit?usp=sharing&ouid=108770714531989318327&rtpof=true&sd=true)**
+
+> **Note on Compatibility:** The Google Sheets preview may display occasional `#NAME?` errors or formula warnings due to differences between Google Sheets and Microsoft Excel formula compatibility. These are preview-only compatibility issues and do not affect the functionality of the original Excel workbook. For the intended formula behavior and full functionality, please download and open the `.xlsx` file in Microsoft Excel.
+
 ---
 
 ## What It Helps You Track: Tunnel Estimating Pain Points & BOQ Solutions
