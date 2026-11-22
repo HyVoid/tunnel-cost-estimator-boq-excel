@@ -26,6 +26,17 @@ Run rapid tunnel feasibility checks and quantity takeoffs (QTO) directly in our 
 >
 > *Engineering Disclaimer: This software functions strictly as a commercial cost estimation and Bill of Quantities (BOQ) computational engine. It does not replace site-specific geotechnical investigations or certified design authorizations by licensed Tunnel Engineers, Blasting Engineers, or Geotechnical Specialists in determining blast patterns, powder factors, perimeter presplit spacing, rock mass classifications (Q-system, RMR, GSI), or structural ground support classes.*
 
+## Questions, Feedback & Product Updates
+
+This tunnel estimating tool is built around practical quantity takeoff, drill-and-blast cost planning, resource estimation, and tender preparation workflows. Feedback from estimators and engineers helps identify unclear assumptions, missing cost components, or improvements to the BOQ workflow.
+
+- **Questions & workflow fit:** [Ask about tunnel geometry inputs, excavation quantities, cycle assumptions, ground-support takeoff, resource rates, or BOQ outputs](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions).
+- **Ideas & improvements:** [Suggest additional tunnel activities, cost components, validation checks, or reporting outputs](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas).
+- **Report a technical problem:** [Open the tunnel estimating issue form](https://github.com/HyVoid/tunnel-cost-estimator-boq-excel/issues/new?template=bug-report.yml).
+- **Product updates:** [Follow maintenance and improvement notes](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates).
+
+When describing a problem, identify the relevant input, calculation stage, resource category, or output metric. Use anonymized dimensions and illustrative rates. Do not upload confidential tenders, site drawings, geotechnical investigation records, supplier quotations, blasting plans, credentials, or other commercially sensitive project information.
+
 ## Spreadsheet Preview
 
 Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
